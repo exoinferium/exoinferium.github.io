@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Log In</title>
+ <meta charset="utf-8" />
+	<link rel = "stylesheet" type = "text/css" href = "CommunityProject.css">
+ <script>
+    // validate form
+    function validateForm() {
+    //alert("validate form");
+    
+    // validate name
+    var input = document.forms["myForm"]["name"].value.trim();
+    if (input === "") {
+    alert("Name must be filled out");
+    return false;
+    }
+    // validate city
+    var input = document.forms["myForm"]["city"].value.trim();
+    if (input === "") {
+    alert("City must be filled out");
+    return false;
+    }
+    // validate email
+    var input = document.forms["myForm"]["email"].value.trim();
+    if (input === "") {
+    alert("Email must be filled out");
+    return false;
+    }
+    return true;
+   } // end validateForm
+    </script>
+</head>
+<body>
+ <div id="header">
+ <h1>Log into account to recieve personalized news</h1>
+ </div>
+
+ <div class="nav" >
+    <a class="linkbutton" href="CommunityProject.html" >Back</a>
+</div>
+
+ <div id="content">
+ <h2>Log in</h2>
+ <form class="form" name="myForm" action="thankyou.html"
+ onsubmit="return validateForm()" method="get">
+ <label for="name">First and last name</label> <input type="text" name="name">
+ <label for="city">City </label> <input type="text" name="city">
+ <label for="email">Email </label> <input type="text" name="email">
+ <label for="email">Password </label> <input type="text" name="password">
+    <a class="linkbutton" href="CommunityProject.html" >Confirm log in</a>
+</form
+ </div>
+
+ <div id="footer">
+	<h3> About us</h3>
+	<h4> We are a nonprofit organization that raises awareness for the housing and economy of Canada. This website was founded by Justin, Jujhar and Vunsh</h4>
+	<a class = "linkbutton" href="economy.html">Twitter</a>
+	<a class = "linkbutton" href="more.html">Instagram</a>
+	<a class = "linkbutton" href="login.html">Facebook</a>
+	<a class = "linkbutton" href="games.html">Email</a>
+	<a class = "linkbutton" href="games.html">YouTube</a>
+ </div>
+</body>
+</html>
